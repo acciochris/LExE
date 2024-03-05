@@ -3,24 +3,10 @@ import banner from './assets/home-banner.jpeg'
 function Home() {
   return (
     <div class="px-4 md:px-12 xl:px-48 py-12 flex flex-col items-center">
-      <img src={banner} loading="lazy" class="mb-2 w-full mx-6"/>
-
-      <div class="my-2">
-        <h1 class="text-4xl font-extrabold text-center m-6">Fundraising Goals</h1>
-        <div class="grid grid-cols-1 md:grid-cols-2 items-center px-4 gap-6">
-          <p class="text-lg">
-            Our fundraising goal for this year is $300,000. So far, we are at 55% of our fundraising
-            goal with contributions from 25.4% of parents...imagine what we can do for Lynbrook with
-            100% parent participation!
-          </p>
-          <div class="flex flex-col gap-1">
-            <progress class="progress progress-primary w-full" value="25" max="100"></progress>
-            <p class="text-xl tracking-wider">25% parents have contributed</p>
-            <progress class="progress progress-secondary w-full" value="55" max="100"></progress>
-            <p class="text-xl tracking-wider">55% fundraising goal achieved</p>
-          </div>
-        </div>
-      </div>
+      <div class="w-full gap-4 flex flex-row items-center"> 
+        <h1 class="text-6xl w-full font-extrabold"> Lorem ipsum dolor sit amet, consecteur adipiscing elit. </h1> 
+        <img src={banner} class="mb-2 mx-6 h-60"/>
+      </div> 
 
       <div class="stats stats-vertical md:stats-horizontal md:my-12 my-4 w-full">
         <div class="stat place-items-center">
@@ -38,6 +24,28 @@ function Home() {
         <div class="stat place-items-center">
           <div class="stat-value xl:text-7xl">4,100</div>
           <div class="stat-title xl:text-2xl">Students Helped</div>
+        </div>
+      </div>
+
+      <div class="my-8">
+        
+        <div class="w-full flex flex-row gap-16">
+        <div class="flex flex-col gap-1 w-full items-center">
+            <progress class="progress progress-primary w-full" value="25" max="100"></progress>
+            <p class="text-xl tracking-wider">25% parents have contributed</p>
+            <progress class="progress progress-secondary w-full" value="55" max="100"></progress>
+            <p class="text-xl tracking-wider">55% fundraising goal achieved</p>
+        </div>
+        
+        <div class="flex flex-col gap-4 w-full"> 
+          <h1 class="text-4xl font-extrabold text-center -mt-8 drop-shadow-2xl">Fundraising Goals</h1>
+          <p class="text-lg text-center">
+            Our fundraising goal for this year is $300,000. So far, we are at 55% of our fundraising
+            goal with contributions from 25.4% of parents...imagine what we can do for Lynbrook with
+            100% parent participation!
+          </p>
+        </div> 
+        
         </div>
       </div>
 
