@@ -2,11 +2,18 @@ import banner from './assets/home-banner.jpeg'
 
 function Home() {
   return (
-    <div class="px-4 md:px-12 xl:px-48 py-12 flex flex-col items-center">
-      <div class="w-full gap-4 flex flex-row items-center"> 
+    <div class="px-4 md:px-12 xl:px-48 md:py-12 flex flex-col items-center">
+      <div class="w-full grid sm:grid-cols-1 grid-cols-2 gap-12"> 
+        <h1 class="text-6xl w-full font-extrabold sm:mx-12 sm:ml-0 ml-12 mt-12"> LEXE Foundation. </h1> 
+        <div class="w-full flex flex-row"> 
+        <img src={banner} class="mb-2 mx-6 sm:mx-0 h-60"/>
+        </div> 
+      </div> 
+
+      {/* <div class="w-full gap-4 flex flex-row items-center"> 
         <h1 class="text-6xl w-full font-extrabold"> Lorem ipsum dolor sit amet, consecteur adipiscing elit. </h1> 
         <img src={banner} class="mb-2 mx-6 h-60"/>
-      </div> 
+      </div>  */}
 
       <div class="stats stats-vertical md:stats-horizontal md:my-12 my-4 w-full">
         <div class="stat place-items-center">
@@ -39,9 +46,9 @@ function Home() {
         
         <div class="flex flex-col gap-4 w-full"> 
           <h1 class="text-4xl font-extrabold text-center -mt-8 drop-shadow-2xl">Fundraising Goals</h1>
-          <p class="text-lg text-center">
+          <p class="text-lg text-left">
             Our fundraising goal for this year is $300,000. So far, we are at 55% of our fundraising
-            goal with contributions from 25.4% of parents...imagine what we can do for Lynbrook with
+            goal with contributions from 25.4% of parents. Imagine what we can do for Lynbrook with
             100% parent participation!
           </p>
         </div> 
