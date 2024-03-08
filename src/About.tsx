@@ -7,7 +7,7 @@ function About() {
 
     {/** Put the code for departments front page */}
     <div class="w-full gap-4 flex flex-row sm:flex-col"> 
-        <div class="flex flex-col gap-2 w-[50%] sm:w-full"> 
+        <div class="flex flex-col gap-2 w-[50%] sm:w-full mt-20"> 
           <h1 class="text-6xl font-extrabold text-center"> Our Mission </h1> 
           <p class="text-2xl font-light text-center mx-20"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sollicitudin enim in dapibus sollicitudin. Sed euismod semper convallis. Mauris vel laoreet tellus. </p> 
         </div> 
@@ -15,16 +15,16 @@ function About() {
     </div> 
 
     <div class="w-full gap-4 flex flex-row sm:flex-col"> 
-        <div class="flex flex-col gap-2 w-[50%] sm:w-full"> 
+        <img src={contributions} class="mb-2 h-96 mx-20"/>
+        <div class="flex flex-col gap-2 w-[50%] sm:w-full mt-20"> 
           <h1 class="text-6xl font-extrabold text-center"> Our Mission </h1> 
           <p class="text-2xl font-light text-center mx-20"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sollicitudin enim in dapibus sollicitudin. Sed euismod semper convallis. Mauris vel laoreet tellus. </p> 
         </div> 
-        <img src={contributions} class="mb-2 sm:h-96 mx-20"/>
     </div> 
 
     {/** Put all the officer section here. */}
 
-    <div class="flex flex-row w-full justify-around my-4"> 
+    <div class="flex flex-row w-full justify-around my-8"> 
       <div class="flex flex-col gap-4"> 
         <Officer/>
         <Officer/>
