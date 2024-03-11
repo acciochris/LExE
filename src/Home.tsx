@@ -3,11 +3,9 @@ import banner from './assets/home-banner.jpeg'
 function Home() {
   return (
     <div class="px-4 md:px-12 xl:px-48 md:py-12 flex flex-col items-center">
-      <div class="w-full grid sm:grid-cols-1 grid-cols-2 gap-12"> 
-        <h1 class="text-6xl w-full font-extrabold sm:mx-12 sm:ml-0 ml-12 mt-12"> LEXE Foundation. </h1> 
-        <div class="w-full flex flex-row"> 
-        <img src={banner} class="mb-2 mx-6 sm:mx-0 h-60"/>
-        </div> 
+      <div class="w-full grid sm:grid-cols-1 grid-cols-2 gap-12 place-items-center"> 
+        <h1 class="text-5xl text-center font-extrabold drop-shadow-lg">LEXE Foundation</h1> 
+        <img src={banner} class="mb-2 mx-6 sm:mx-0 w-full" />
       </div> 
 
       {/* <div class="w-full gap-4 flex flex-row items-center"> 
