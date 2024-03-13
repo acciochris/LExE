@@ -1,10 +1,8 @@
 import Officer from "./Officer"
-import grants from './assets/about-grants.png'
-import contributions from "./assets/contributions.png"
 
 import { onMount } from 'solid-js'
 import { Chart, Title, Tooltip, Legend, Colors } from 'chart.js'
-import {Pie, Line, DefaultChart} from 'solid-chartjs'
+import {Pie, Line} from 'solid-chartjs'
 
 onMount(() => {
   Chart.register(Title, Tooltip, Legend, Colors)
@@ -19,7 +17,7 @@ const lineOptions_grants = {
         position: "left",
         ticks: {
             // Include a dollar sign in the ticks
-            callback: function(value, index, ticks) {
+            callback: function(value, _index, _ticks) {
                 return '$' + value + 'M';
             }
         }, 
@@ -33,7 +31,7 @@ const lineOptions_grants = {
       }, 
       ticks: {
         // Include a dollar sign in the ticks
-        callback: function(value, index, ticks) {
+        callback: function(value, _index, _ticks) {
             return value + ' grants';
         }
     }, 
