@@ -170,6 +170,7 @@ function About() {
 
     {/** Put all the officer section here. */}
 
+    <h3 class="text-4xl font-extrabold text-center my-4"> Meet The Team </h3> 
     <div class="flex flex-row w-full justify-around my-8"> 
       <div class="flex flex-col gap-4"> 
         <Officer/>
