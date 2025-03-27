@@ -1,3 +1,6 @@
+> [!WARNING]  
+> This repository is no longer being maintained. The new, official Github repo is at https://github.com/lexewebsite/lexe
+
 ## Repository Information.
 
 This is the repository for the LEXE Modernized Website. This website was built starting in October 2023 by Anish Lakkapragada and Chris Liu.
